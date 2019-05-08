@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ekaterina Parshina](https://up.htmlacademy.ru/htmlcss/25/user/1073759).
-* Наставник: [Александр Кошара](https://up.htmlacademy.ru/htmlcss/25/user/169035).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
