@@ -7,10 +7,11 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
-      <section class="search">
-        <img class="icon" src="lens.jpg" alt="Иконка поиска"  width="15" height="15">
-        <!-- Здесь будет форма поиска -->
-      </section>
+      <form action="#" class="search">
+          <img class="icon" src="lens.svg" alt="Иконка поиска" width="15" height="15">
+          <input type="search" placeholder="Поиск по сайту">
+          <input type="submit" name="Найти результаты поиска" value="Найти">
+      </form>
       <ul class="login-header">
         <li class="username-header">
           <a href="#"><img class="icon" src="man.svg" alt="Иконка авторизации" width="15" height="15">Валентин Петухов</a>
@@ -23,7 +24,16 @@
       </ul>
       <nav class="main-navigation">
         <ul class="header-site-navigation">
-          <li class="dropdown-menu"><a href="#">Каталог товаров <img class="icon" src="plus.svg" alt="Плюсик" width="15" height="15"></a></li><!--Заменить плюс средствами CSS-->
+          <li><a href="#">Каталог товаров <img class="icon" src="plus.svg" alt="Плюсик" width="15" height="15"></a>
+            <ul class="submenu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a>Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li><!--Заменить плюс средствами CSS-->
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -37,30 +47,32 @@
         <li><a href="#">Каталог товаров</a></li>
         <li>Моноподы для селфи</li>
       </ul>
-      <section class="filter">
+      <form class="filter" method="POST" action="#">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <div class="filter-block">
-          <!-- Здесь будет форма -->
-        </div>
-        <div class="filter-block">
-          <h3>Цвет</h3>
-          <ul class="color-list"> <!--Заменить на форму checkbox-->
-            <li>Черный</li>
-            <li>Белый</li>
-            <li>Синий</li>
-            <li>Красный</li>
-            <li>Розовый</li>
-          </ul>
-        </div>
-        <div class="filter-block">
-          <h3>Bluetooth</h3>
-          <ul class="is-bluetooth"> <!--Заменить на форму radio-->
-            <li>Есть</li>
-            <li>Нет</li>
-          </ul>
-        </div>
-        <span class="cross-line">Показать</span>
-      </section>
+        <fieldset class="filter-block">
+          <!-- Здесь будет форма стоимости-->
+        </fieldset>
+        <fieldset class="filter-block">
+          <p>Цвет</p>
+          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Черный<br>
+          <input type="checkbox" class="color-checkbox" name="color-of-checkbox">Белый<br>
+          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Синий<br>
+          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Красный<br>
+          <input type="checkbox" class="color-checkbox" name="color-of-checkbox">Розовый<br>
+        </fieldset>
+        <fieldset class="filter-block">
+          <p>Bluetooth</p>
+          <p>
+            <input type="radio" class="isbluetooth" id="bluetooth-yes" name="isbluetooth" checked>
+            <label for="bluetooth-yes">Есть</label>
+          </p>
+          <p>
+            <input type="radio" class="isbluetooth" id="bluetooth-no" name="isbluetooth">
+            <label for="bluetooth-no">Нет</label>
+          </p>
+        </fieldset>
+        <button type="submit" class="cross-line" aria-label="Показать результаты фильтрации">Показать</button>
+      </form>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
         <div class="sorting-options">

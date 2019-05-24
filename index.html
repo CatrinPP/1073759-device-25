@@ -7,10 +7,11 @@
   <body>
     <header class="page-header">
       <a class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
-      <section class="search">
+      <form action="#" class="search">
         <img class="icon" src="lens.svg" alt="Иконка поиска" width="15" height="15">
-        <!-- Здесь будет форма поиска -->
-      </section>
+        <input type="search" placeholder="Поиск по сайту">
+        <input type="submit" name="Найти результаты поиска" value="Найти">
+      </form>
       <a class="login-link" href="#"><img class="icon" src="man.svg" alt="Иконка авторизации" width="15" height="15">Войти</a>
       <ul class="header-user-navigation">
         <li class="compare-header"><a href="#"><img class="icon" src="lines.svg" alt="Иконка столбики" width="15" height="15">Сравнить</a></li>
@@ -18,7 +19,16 @@
       </ul>
       <nav class="main-navigation">
         <ul class="header-site-navigation">
-          <li class="dropdown-menu"><a href="#">Каталог товаров <img class="icon" src="plus.svg" alt="Плюсик" width="15" height="15"></a></li><!--Заменить плюс средствами CSS-->
+          <li><a href="#">Каталог товаров <img class="icon" src="plus.svg" alt="Плюсик" width="15" height="15"></a>
+            <ul class="submenu">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="inner.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li><!--Заменить плюс средствами CSS-->
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -78,15 +88,30 @@
       </div>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-logo" src="htmlacademy-logo.jpg" alt="Логотип HTML Academy" width="15" height="25"></a>
     </footer>
-    <section class="modal modal-write-us">
-      <p>Ваше имя</p>
-        <!-- Здесь будет форма -->
-      <p>Ваш e-mail</p>
-        <!-- Здесь будет форма -->
-      <p>Текст письма</p>
-        <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-      <span class="modal-send cross-line">Отправить</span>
+    <form class="modal modal-write-us" action="#" method="POST">
+      <p>
+        <label>
+        Ваше имя
+        <input type="text" placeholder="Имя Фамилия">
+        </label>
+      </p>
+      <p>
+        <label>Ваш e-mail
+          <input type="text" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label>Текст письма
+          <textarea placeholder="В свободной форме" rows="10" cols="45" name="text"></textarea>
+        </label>
+      </p>
+      <p>
+        <input class="modal-send cross-line" type="submit" value="Отправить">
+      </p>
+      <button class="modal-close" aria-label="Закрыть окно">x</button>
+    </form>
+    <section class="modal modal-map">
+      <img src="img/map-big.png" alt="Адрес компании ул.Строителей, д.15" width="960" height="559">
     </section>
   </body>
 </html>
