@@ -7,25 +7,25 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
-      <form action="#" class="search">
-          <img class="icon" src="lens.svg" alt="Иконка поиска" width="15" height="15">
+      <form action="#" class="search" method="GET">
+          <!--Оформить картинку lens.svg в css-->
           <input type="search" placeholder="Поиск по сайту">
-          <input type="submit" name="Найти результаты поиска" value="Найти">
-      </form>
+          <input type="submit" name="search-results" value="Найти">
+        </form>
       <ul class="login-header">
         <li class="username-header">
-          <a href="#"><img class="icon" src="man.svg" alt="Иконка авторизации" width="15" height="15">Валентин Петухов</a>
+          <a href="#">Валентин Петухов</a><!--Добавить иконку на css-->
         </li>
         <li class="logout"><a href="#">Выйти</a></li>
       </ul>
       <ul class="header-user-navigation">
-        <li class="compare-header"><a href="#"><img class="icon" src="lines.svg" alt="Иконка столбики" width="15" height="15">Сравнить</a></li>
-        <li class="cart-header"><a href="#"><img class="icon" src="cart.svg" alt="Иконка корзины" width="15" height="15">Корзина</a></li>
+        <li class="compare-header"><a href="#">Сравнить</a></li><!--Добавить иконку на css-->
+        <li class="cart-header"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
       </ul>
       <nav class="main-navigation">
         <ul class="header-site-navigation">
-          <li><a href="#">Каталог товаров <img class="icon" src="plus.svg" alt="Плюсик" width="15" height="15"></a>
-            <ul class="submenu">
+          <li><a href="#">Каталог товаров</a><!--Декоративный плюс средствами CSS-->
+            <ul class="submenu">  
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a>Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
@@ -33,7 +33,7 @@
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
-          </li><!--Заменить плюс средствами CSS-->
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -54,24 +54,18 @@
         </fieldset>
         <fieldset class="filter-block">
           <p>Цвет</p>
-          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Черный<br>
-          <input type="checkbox" class="color-checkbox" name="color-of-checkbox">Белый<br>
-          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Синий<br>
-          <input type="checkbox" class="color-checkbox" name="color-of-checkbox" checked>Красный<br>
-          <input type="checkbox" class="color-checkbox" name="color-of-checkbox">Розовый<br>
+          <p><label><input type="checkbox" class="color-checkbox" name="color-of-checkbox" value="black" checked><span>Черный</span></label></p>
+          <p><label><input type="checkbox" class="color-checkbox" name="color-of-checkbox" value="white"><span>Белый</span></label></p>
+          <p><label><input type="checkbox" class="color-checkbox" name="color-of-checkbox" value="blue" checked><span>Синий</span></label></p>
+          <p><label><input type="checkbox" class="color-checkbox" name="color-of-checkbox" value="red" checked><span>Красный</span></label></p>
+          <p><label><input type="checkbox" class="color-checkbox" name="color-of-checkbox" value="rose"><span>Розовый</span></label></p>
         </fieldset>
         <fieldset class="filter-block">
           <p>Bluetooth</p>
-          <p>
-            <input type="radio" class="isbluetooth" id="bluetooth-yes" name="isbluetooth" checked>
-            <label for="bluetooth-yes">Есть</label>
-          </p>
-          <p>
-            <input type="radio" class="isbluetooth" id="bluetooth-no" name="isbluetooth">
-            <label for="bluetooth-no">Нет</label>
-          </p>
+          <p><label><input type="radio" class="isbluetooth" value="bluetooth-yes" name="isbluetooth" checked><span>Есть</span></label></p>
+          <p><label><input type="radio" class="isbluetooth" value="bluetooth-no" name="isbluetooth"><span>Нет</span></label></p>
         </fieldset>
-        <button type="submit" class="cross-line" aria-label="Показать результаты фильтрации">Показать</button>
+        <button type="submit" class="cross-line">Показать</button>
       </form>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка товаров</h2>
@@ -82,30 +76,22 @@
           <li class="catalog-item">
             <h3><a href="#">Любительская селфи-палка</a></h3>
             <span class="price">500 руб.</span>
-            <p class="catalog-item image">
-              <a href="#"><img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></a>
-            </p>
+            <p class="catalog-item image"><a href="#"><img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></a></p>
           </li>
           <li class="catalog-item">
             <h3><a href="#">Профессиональная селфи-палка</a></h3>
-              <span class="price">1 500 руб.</span>
-              <p class="catalog-item image">
-                <a href="#"><img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380"></a>
-              </p>
+            <span class="price">1 500 руб.</span>
+            <p class="catalog-item image"><a href="#"><img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380"></a></p>
           </li>
           <li class="catalog-item">
             <h3><a href="#">Непотопляемая селфи-палка</a></h3>
-              <span class="price">2 500 руб.</span>
-              <p class="catalog-item image">
-                <a href="#"><img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></a>
-              </p>
+            <span class="price">2 500 руб.</span>
+            <p class="catalog-item image"><a href="#"><img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></a></p>
           </li>
           <li class="catalog-item">
             <h3><a href="#">Селфи-палка &laquo;Следуй за мной&raquo;</a></h3>
-              <span class="price">4 900 руб.</span>
-              <p class="catalog-item image">
-                <a href="#"><img src="img/item-4.jpg" alt="Селфи-палка в виде тянущейся руки" width="360" height="380"></a>
-              </p>
+            <span class="price">4 900 руб.</span>
+            <p class="catalog-item image"><a href="#"><img src="img/item-4.jpg" alt="Селфи-палка в виде тянущейся руки" width="360" height="380"></a></p>
           </li>
         </ul>
       </section>
@@ -117,14 +103,12 @@
       <a href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип в желтом цвете" width="163" height="35"></a> <!-- Залить желтым -->
       <p class="address">г.Москва, ул. Строителей, 15</p>
       <ul class="login-footer">
-        <li class="username-footer">
-          <a href="#"><img class="icon" src="man-yellow.svg" alt="Иконка авторизации" width="15" height="15">Валентин Петухов</a>
-        </li>
+        <li class="username-footer"><a href="#">Валентин Петухов</a></li><!--Добавить иконку на css-->
         <li class="logout"><a href="#">Выйти</a></li>
       </ul>
       <ul class="footer-user-navigation">
-        <li class="compare-footer"><a href=#><img class="icon" src="lines-yellow.svg" alt="Иконка столбики" width="15" height="15">Сравнить</a></li>
-        <li class="cart-footer"><a href="#"><img class="icon" src="cart-yellow.svg" alt="Иконка корзины" width="15" height="15">Корзина</a></li>
+        <li class="compare-footer"><a href=#>Сравнить</a></li><!--Добавить иконку на css-->
+        <li class="cart-footer"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
       </ul>
       <ul class="footer-site-navigation">
         <li><a href="#">Доставка</a></li>
