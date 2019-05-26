@@ -7,7 +7,7 @@
   <body>
     <header class="page-header">
       <a class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
-      <form action="#" class="search" method="GET">
+      <form action="https://echo.htmlacademy.ru" class="search" method="GET">
         <!--Оформить картинку lens.svg в css-->
         <input type="search" placeholder="Поиск по сайту">
         <input type="submit" name="search-results" value="Найти">
@@ -88,11 +88,28 @@
       </div>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-logo" src="htmlacademy-logo.jpg" alt="Логотип HTML Academy" width="15" height="25"></a>
     </footer>
-    <form class="modal modal-write-us" action="#" method="POST">
-      <p><label><span>Ваше имя</span><input type="text" placeholder="Имя Фамилия"></label></p>
-      <p><label><span>Ваш e-mail</span><input type="email" name="emaladdress" placeholder="email@example.com"></label></p>
-      <p><label><span>Текст письма</span><textarea placeholder="В свободной форме" rows="10" cols="45" name="text"></textarea></label></p>
-      <p><input class="modal-send cross-line" type="submit" value="Отправить"></p>
+    <form class="modal modal-write-us" action="https://echo.htmlacademy.ru" method="POST">
+      <p>
+        <label>
+          <span>Ваше имя</span>
+          <input type="text" placeholder="Имя Фамилия" name="username">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Ваш e-mail</span>
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Текст письма</span>
+          <textarea placeholder="В свободной форме" rows="10" cols="45" name="text"></textarea>
+        </label>
+      </p>
+      <p>
+        <button class="modal-send cross-line" type="submit">Отправить</button>
+      </p>
       <button class="modal-close" aria-label="Закрыть окно">x</button>
     </form>
     <!-- <section class="modal modal-map">
