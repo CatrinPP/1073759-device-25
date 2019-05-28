@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+         url("../fonts/gilroyextrabold.woff") format("woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+         url("../fonts/gilroylight.woff") format("woff");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/opensanslight.woff2") format("woff2"),
+         url("../fonts/opensanslight.woff") format("woff");
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    font-family: Gilroy, Arial, sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.page-header {
+    width: 1160px;
+    height: 299px;
+    font-weight: bold;
+    background-image: url("../img/background_header.jpg");
+    background-size: cover;
+    color: #000000;
+}
+
+.logo-header:hover {
+    opacity: 0.6;
+}
+
+.logo-header:active {
+    opacity: 0.3;
+}
+
+.search {
+    opacity: 0.3;
+}
+
+.search:hover {
+    opacity: 0.6;
+}
+
+.search-field {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.search-field:focus {
+    outline: 0;
+} 
+
+.search-btn {
+    display: none;
+}
+
+.login-link {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.login-link:hover {
+    opacity: 0.6;
+}
+
+.login-link:active {
+    opacity: 0.3;
+}
+
+.header-user-navigation {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.header-user-navigation li:hover,
+.username-header:hover {
+    opacity: 0.6;
+}
+
+.header-user-navigation li:active,
+.username-header:active {
+    opacity: 0.3;
+}
+
+.logout:hover {
+    opacity: 0.6;
+}
+
+.login-header {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.login-header a {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li:active {
+    opacity: 0.3;
+}
+
+.submenu li:hover {
+    opacity: 0.6;
+}
+
+.header-site-navigation {
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    list-style: none;
+}
+
+.header-site-navigation li:hover {
+    opacity: 0.6;
+}
+
+.header-site-navigation li:active {
+    opacity: 0.3;
+}
+
+.info-block-header {
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.15px;
+}
+
+.about-us p {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    color: #464646;
+    list-style: none;
+}
+
+.contacts-block p {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    color: #464646;
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.cross-line {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.cross-line:active {
+    opacity: 0.3;
+}
+
+.breadcrumbs,
+.breadcrumbs a {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 24px;
+    list-style: none;
+}
+
+.breadcrumbs a {
+    opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+    opacity: 0.1;
+}
+
+.breadcrumbs li:last-child {
+    opacity: 0.3;
+}
+
+.modal-write-us {
+    display: none;
+}
+
+.catalog-list {
+    letter-spacing: 0.15px;
+    list-style: none;
+}
+
+.price {
+    font-family: Gilroy, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+}
+
+.filter-block {
+    border: 0;
+}
+
+.color-checkbox + span,
+.isbluetooth + span {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.button {
+    border: 0;
+    background: none;
+}
+
+.button:active, 
+.button:focus {
+    outline: 0;
+}
+
+.main-footer {
+    width: 1440px;
+    height: 323px;
+    color: #ffffff;
+    background-image: url("../img/background_footer_part.jpg");
+}
+
+.main-footer a {
+    color: #ffffff; 
+} 
+
+.logo-footer:hover {
+    opacity: 0.6;
+}
+
+.logo-footer:active {
+    opacity: 0.3;
+}
+
+.login-footer {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+    color: #ffffff; 
+    opacity: 0.7;
+} 
+
+.login-footer:hover { 
+    opacity: 1;
+}
+
+.login-footer:active {
+    opacity: 0.3;
+}
+
+.user-footer li {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    list-style: none;
+    opacity: 0.7;
+}
+
+.user-footer li:hover { 
+    opacity: 1;
+}
+
+.user-footer li:active {
+    opacity: 0.3;
+}
+
+.logout a {
+    letter-spacing: 0.15px;
+    opacity: 0.3;
+}
+
+.footer-user-navigation li {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.15px;
+    line-height: 30px;
+    opacity: 0.7;
+    list-style: none;
+}
+
+.footer-user-navigation li:hover { 
+    opacity: 1;
+}
+
+.footer-user-navigation li:active {
+    opacity: 0.3;
+}
+
+.footer-site-navigation {
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    list-style: none;
+}
+
+.footer-site-navigation li:hover {
+    opacity: 0.6;
+}
+
+.footer-site-navigation li:active {
+    opacity: 0.3;
+}
+
+.address {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 30px;
+    list-style: none;
+}
+
+.tel {
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 30px;
+    list-style: none;
+}
+
+.social a {
+    opacity: 0.3;
+}
+
+.social a:hover {
+    opacity: 0.6;
+}
+
+.social a:active {
+    opacity: 0.1;
+}
+
+.htmlacademy-logo:hover {
+    opacity: 0.6;
+}
+
+.htmlacademy-logo:active {
+    opacity: 0.3;
+}
