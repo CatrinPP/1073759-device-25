@@ -2,28 +2,28 @@
     font-family: "Gilroy";
     src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
          url("../fonts/gilroyextrabold.woff") format("woff");
-    font-weight: bold;
+    font-weight: 800;
 }
 
 @font-face {
     font-family: "Gilroy";
     src: url("../fonts/gilroylight.woff2") format("woff2"),
          url("../fonts/gilroylight.woff") format("woff");
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @font-face {
     font-family: "OpenSans";
     src: url("../fonts/opensanslight.woff2") format("woff2"),
          url("../fonts/opensanslight.woff") format("woff");
-    font-weight: 100;
+    font-weight: 300;
 }
 
 body {
     margin: 0;
     font-family: Gilroy, Arial, sans-serif; 
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     line-height: 24px;
     color: #000000;
 }
@@ -34,12 +34,9 @@ a {
 }
 
 .page-header {
-    width: 1160px;
-    height: 299px;
-    font-weight: bold;
-    background-image: url("../img/background_header.jpg");
-    background-size: cover;
+    font-weight: 800;
     color: #000000;
+    background-color: #f7e296;
 }
 
 .logo-header:hover {
@@ -61,7 +58,7 @@ a {
 .search-field {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -80,7 +77,7 @@ a {
 .login-link {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -97,7 +94,7 @@ a {
 .header-user-navigation {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -120,7 +117,7 @@ a {
 .login-header {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -129,7 +126,7 @@ a {
 .login-header a {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -170,7 +167,7 @@ a {
 .about-us p {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     color: #464646;
@@ -180,7 +177,7 @@ a {
 .contacts-block p {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     color: #464646;
@@ -201,7 +198,7 @@ a {
 .cross-line {
     font-family: Gilroy, Arial, sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     letter-spacing: 3.6px;
     text-transform: uppercase;
 }
@@ -214,7 +211,7 @@ a {
 .breadcrumbs a {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 24px;
     list-style: none;
 }
@@ -247,7 +244,7 @@ a {
 .price {
     font-family: Gilroy, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
 }
 
@@ -259,7 +256,7 @@ a {
 .isbluetooth + span {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .button {
@@ -273,10 +270,8 @@ a {
 }
 
 .main-footer {
-    width: 1440px;
-    height: 323px;
     color: #ffffff;
-    background-image: url("../img/background_footer_part.jpg");
+    background-color: #464646;
 }
 
 .main-footer a {
@@ -294,7 +289,7 @@ a {
 .login-footer {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -313,7 +308,7 @@ a {
 .user-footer li {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     list-style: none;
@@ -336,7 +331,7 @@ a {
 .footer-user-navigation li {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.15px;
     line-height: 30px;
     opacity: 0.7;
@@ -368,7 +363,7 @@ a {
 .address {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
     list-style: none;
 }
@@ -376,7 +371,7 @@ a {
 .tel {
     font-family: OpenSans, Arial, sans-serif;
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 30px;
     list-style: none;
 }
