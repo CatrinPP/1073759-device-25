@@ -7,88 +7,107 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
-      <form action="https://echo.htmlacademy.ru" class="search" method="GET">
-        <!--Оформить картинку lens.svg в css-->
-        <input class="search-field" type="search" placeholder="Поиск по сайту">
-        <button class="search-btn" type="submit">Найти</button>
-      </form>
-      <a class="login-link" href="#">Войти</a><!--Добавить иконку на css-->
-      <ul class="header-user-navigation">
-        <li class="compare-header"><a href="#">Сравнить</a></li><!--Добавить иконку на css-->
-        <li class="cart-header"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
-      </ul>
-      <nav class="main-navigation">
-        <ul class="header-site-navigation">
-          <li><a href="#">Каталог товаров</a><!--Декоративный плюс средствами CSS-->
-            <ul class="submenu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="inner.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header class="page-header">
+        <a class="link"><img class="logo-header" src="img/logo.svg" alt="Логотип" width="163" height="35"></a>
+        <div class="header-firstline-wrapper">
+          <form action="https://echo.htmlacademy.ru" class="search" method="GET">
+            <!--Оформить картинку lens.svg в css-->
+            <input class="search-field" type="search" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit">Найти</button>
+          </form>
+          <a class="login-link" href="#">Войти</a><!--Добавить иконку на css-->
+          <ul class="header-user-navigation">
+            <li class="compare-header"><a href="#">Сравнить</a></li><!--Добавить иконку на css-->
+            <li class="cart-header"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
+          </ul>
+        </div>
+        <nav class="main-navigation">
+          <ul class="header-site-navigation">
+            <li><a href="#">Каталог товаров</a><!--Декоративный плюс средствами CSS-->
+              <ul class="submenu">
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="inner.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main class="container">
-      <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
-      <section class="slider1">
-        <!-- Здесь будет первый слайдер -->
-      </section>
-      <section class="product-category-list">
-        <!-- Здесь будет блок с категориями товаров -->
-      </section>
-      <section class="slider2">
-        <!-- Здесь будет второй слайдер -->
-      </section>
-      <section class="partners">
-        <!-- Здесь будет блок с торговыми марками -->
-      </section>
-      <section class="about-us">
-        <h2 class="info-block-header">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul class="delivery-partners">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="cross-line">Подробнее о нас</a>
-      </section>
-      <section class="contacts-block">
-        <h2 class="info-block-header">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#"><img class="map" src="img/map.png" alt="Карта проезда" width="560" height="222"></a>
-        <a href="#" class="cross-line">Напишите нам</a>
-      </section>
+      <div class="wrapper">
+        <h1 class="visually-hidden">Интернет-магазин гаджетов DEVICE</h1>
+        <section class="slider1">
+          <!-- Здесь будет первый слайдер -->
+        </section>
+        <section class="product-category-list">
+          <!-- Здесь будет блок с категориями товаров -->
+        </section>
+        <section class="slider2">
+          <!-- Здесь будет второй слайдер -->
+        </section>
+        <section class="brands">
+          <!-- Здесь будет блок с торговыми марками -->
+        </section>
+        <div class="info-blocks-wrapper">
+          <section class="about-us">
+            <h2 class="info-block-header">О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <ul class="delivery-partners">
+              <li>Деловые линии</li>
+              <li>Автотрейдинг</li>
+              <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="#" class="cross-line info-block-link">Подробнее о нас</a>
+          </section>
+          <section class="contacts-block">
+            <h2 class="info-block-header">Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <a href="#"><img class="map" src="img/map.png" alt="Карта проезда" width="560" height="222"></a>
+            <a href="#" class="cross-line info-block-link">Напишите нам</a>
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
-      <a href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип в желтом цвете" width="163" height="35"></a><!-- Залить желтым -->
-      <p class="address">г.Москва, ул. Строителей, 15</p>
-      <a class="login-footer" href="#">Войти</a><!--Добавить иконку на css-->
-      <ul class="footer-user-navigation">
-        <li class="compare-footer"><a href="#">Сравнить</a></li><!--Добавить иконку на css-->
-        <li class="cart-footer"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
-      </ul>
-      <ul class="footer-site-navigation">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <a href="tel:+74954959595" class="tel">Тел.: +7 (495) 495-95-95</a>
-      <div class="social">
-        <a href="#"><img class="social-icon" src="img/facebook.svg" alt="Мы в Фейсбуке" width="32" height="32"></a>
-        <a href="#"><img class="social-icon" src="img/instagram.svg" alt="Мы в Инстаграме" width="32" height="32"></a>
-        <a href="#"><img class="social-icon" src="img/twitter.svg" alt="Мы в Твиттере" width="32" height="32"></a>
+      <div class="wrapper">
+        <div class="footer-row1">
+          <a href="#"><img class="logo-footer" src="img/logo.svg" alt="Логотип в желтом цвете" width="163" height="35"></a><!-- Залить желтым -->
+          <div class="footer-menu-wrapper">
+            <a class="login-footer" href="#">Войти</a><!--Добавить иконку на css-->
+            <ul class="footer-user-navigation">
+              <li class="compare-footer"><a href="#">Сравнить</a></li><!--Добавить иконку на css-->
+              <li class="cart-footer"><a href="#">Корзина</a></li><!--Добавить иконку на css-->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-row2">
+          <p class="address">г.Москва, ул. Строителей, 15</p>
+          <ul class="footer-site-navigation">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <a href="tel:+74954959595" class="tel">Тел.: +7 (495) 495-95-95</a>
+        </div>
+        <div class="footer-row3">
+          <!-- Плюс декоративный элемент -->
+          <div class="social">
+            <a href="#"><img class="social-icon" src="img/facebook.svg" alt="Мы в Фейсбуке" width="32" height="32"></a>
+            <a href="#"><img class="social-icon" src="img/instagram.svg" alt="Мы в Инстаграме" width="32" height="32"></a>
+            <a href="#"><img class="social-icon" src="img/twitter.svg" alt="Мы в Твиттере" width="32" height="32"></a>
+          </div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-logo" src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
+        </div>
       </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="htmlacademy-logo" src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
     </footer>
     <form class="modal modal-write-us" action="https://echo.htmlacademy.ru" method="POST">
       <p>
