@@ -163,12 +163,11 @@ input[type="radio"].visually-hidden {
   visibility: hidden;
 }
 
-.search-field:focus ~ .search-btn {
+.search:focus-within .search-btn {
   visibility: visible;
 }
 
-.search-field:focus,
-.search-field:active {
+.search-field:focus {
   outline: 0;
   border-bottom: 2px solid #000000;
 }
@@ -916,7 +915,7 @@ position: relative;
   opacity: 0.6;
 }
 
-.logo-footer:active {
+.logo-footer svg:active {
   opacity: 0.3;
 }
 
@@ -957,10 +956,6 @@ position: relative;
   opacity: 1;
 }
 
-.user-footer a:active {
-  opacity: 0.3;
-}
-
 .logout {
   letter-spacing: 0.15px;
   opacity: 0.3;
@@ -972,6 +967,10 @@ position: relative;
   margin-right: 20px;
 
   opacity: 0.7;
+}
+
+.user-footer a:active {
+  opacity: 0.3;
 }
 
 .footer-user-navigation {
@@ -1007,7 +1006,9 @@ position: relative;
   opacity: 1;
 }
 
-.footer-user-navigation a:active {
+.footer-user-navigation a:active,
+.compare-footer:active,
+.cart-footer:active {    /*.compare и .cart для IE*/
   opacity: 0.3;
 }
 
@@ -1088,7 +1089,7 @@ position: relative;
   opacity: 0.6;
 }
 
-.social a:active {
+.social img:active {
   opacity: 0.1;
 }
 
@@ -1096,7 +1097,7 @@ position: relative;
   opacity: 0.6;
 }
 
-.htmlacademy-logo:active {
+.htmlacademy-logo svg:active {
   opacity: 0.3;
 }
 
@@ -1123,7 +1124,7 @@ position: relative;
   position: relative;
   z-index: 2;
 
-  /* display: none; */
+  display: none;
   box-sizing: border-box;
   width: 960px;
 
