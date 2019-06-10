@@ -160,16 +160,28 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
 
   border: 2px solid #000000;
-  visibility: hidden;
-}
-
-.search:focus-within .search-btn {
-  visibility: visible;
+  opacity: 0;
 }
 
 .search-field:focus {
   outline: 0;
   border-bottom: 2px solid #000000;
+}
+
+.search-btn:hover {
+  opacity: 1;
+  color: rgba(255, 255, 255, 1);
+  background-color: #000000;
+}
+
+.search-btn:active {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #000000;
+}
+
+.search-field:focus ~ .search-btn {
+  opacity: 1;
 }
 
 .search-btn:hover {
