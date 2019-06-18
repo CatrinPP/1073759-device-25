@@ -73,6 +73,45 @@ input[type="radio"].visually-hidden {
   outline: 0;
 }
 
+.cross-line {
+  position: relative;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+.cross-line:active {
+  opacity: 0.3;
+}
+
+.cross-line::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 20px;
+  left: 0;
+
+  width: 100%;
+  height: 8px;
+
+  background: #ffc600;
+  transition: 0.3s ease;
+}
+
+.cross-line.button::before {
+  top: 18px;
+}
+
+.cross-line:hover::before {
+  top: 0;
+  height: 100%;
+}
+
 .wrapper {
   box-sizing: border-box;
   width: 1200px;
@@ -755,8 +794,6 @@ position: relative;
   display: inline-block;
   padding: 0;
   margin: 0;
-
-
 }
 
 .down-controller {
@@ -790,6 +827,7 @@ position: relative;
 
 .services-list-buttons {
   position: relative;
+  z-index: 10;
 
   display: flex;
   flex-direction: column;
@@ -811,6 +849,16 @@ position: relative;
 .service-slider-button {
   margin-bottom: 20px;
   width: 160px
+}
+
+.services-list-buttons .service-slider-button:active{
+  /* width: 278px; */
+  /* padding-right: 118px; */
+
+  color: #f7e184;
+
+  background-color: #000000;
+  background-size: 278px;
 }
 
 .services-description-block {
@@ -860,6 +908,31 @@ position: relative;
   margin-bottom: 93px;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.brand-logo {
+  width: 260px;
+  height: 100px;
+}
+
+.brand-logo-dji {
+  background-image: url(../img/brandlogo1.png)
+}
+
+.brand-logo-sp {
+  background-image: url(../img/brandlogo2.png)
+}
+
+.brand-logo-gopro {
+  background-image: url(../img/brandlogo3.png)
+}
+
+.brand-logo-vive {
+  background-image: url(../img/brandlogo4.png)
+}
+
+.brand-logo:hover {
+  background-position-y: 100px;
 }
 
 .info-blocks-wrapper {
@@ -1370,45 +1443,6 @@ position: relative;
 
 .pagination-list li:not(.active-page) {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.cross-line {
-  position: relative;
-  padding-top: 12px;
-  padding-bottom: 12px;
-
-  font-family: Gilroy, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-}
-
-.cross-line:active {
-  opacity: 0.3;
-}
-
-.cross-line::before{
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 20px;
-  left: 0;
-
-  width: 100%;
-  height: 8px;
-
-  background: #ffc600;
-  transition: 0.3s ease;
-}
-
-.cross-line.button::before {
-  top: 18px;
-}
-
-.cross-line:hover::before {
-  top: 0;
-  height: 100%;
 }
 
 .sorting {
