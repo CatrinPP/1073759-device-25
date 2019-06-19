@@ -175,9 +175,14 @@
         <div class="wrapper">
           <section class="services-slider">
             <div class="services-list-buttons">
-              <button class="cross-line button service-slider-button">Доставка</button>
-              <button class="cross-line button service-slider-button">Гарантия</button>
-              <button class="cross-line button service-slider-button">Кредит</button>
+              <input class="delivery-slider visually-hidden" id="delivery-slider" type="radio" name="services-slider" value="service-slider1" checked>
+              <input class="warranty-slider visually-hidden" id="warranty-slider" type="radio" name="services-slider" value="service-slider2">
+              <input class="credit-slider visually-hidden" id="credit-slider" type="radio" name="services-slider" value="service-slider3">
+              <div class="serviceslider-controls">
+                <label class="cross-line service-slider-button" for="delivery-slider">Доставка</label>
+                <label class="cross-line service-slider-button" for="warranty-slider">Гарантия</label>
+                <label class="cross-line service-slider-button" for="credit-slider">Кредит</label>
+              </div>
             </div>
             <div class="services-description-block">
               <h2 class="visually-hidden">Дополнительные услуги магазина</h2>
@@ -186,21 +191,21 @@
                   <h3 class="service-name">Доставка</h3>
                   <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </div>
-                <img class="service-image" src="img/delivery.svg" alt="Курьер" width="136" height="164">
+                <img class="service-image" src="img/delivery.png" alt="Курьер" width="180" height="194">
               </div>
               <div class="warranty service-block">
                 <div class="service-description-text">
                   <h3 class="service-name">Гарантия</h3>
                   <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
                 </div>
-                <img class="service-image" src="img/warranty.svg" alt="Звонок по гарантии" width="171" height="194">
+                <img class="service-image" src="img/warranty.png" alt="Звонок по гарантии" width="180" height="194">
               </div>
               <div class="credit service-block">
                 <div class="service-description-text">
                   <h3 class="service-name">Кредит</h3>
                   <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
                 </div>
-                <img class="service-image" src="img/credit.svg" alt="Несущий большую банковскую карту" width="156" height="186">
+                <img class="service-image" src="img/credit.png" alt="Несущий большую банковскую карту" width="180" height="194">
               </div>
             </div>
           </section>
@@ -228,7 +233,7 @@
           <section class="contacts-block">
             <h2 class="info-block-header">Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#"><img class="map" src="img/map.png" alt="Карта проезда" width="560" height="222"></a>
+            <a href="https://goo.gl/maps/qT4XMJmQB2xYji549" target="_blank"><img class="map" src="img/map.png" alt="Карта проезда" width="560" height="222"></a>
             <a href="#" class="cross-line info-block-link">Напишите нам</a>
           </section>
         </div>
