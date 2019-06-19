@@ -75,7 +75,6 @@ input[type="radio"].visually-hidden {
 
 .cross-line {
   position: relative;
-  /* z-index: 0; */
 
   padding-top: 12px;
   padding-bottom: 12px;
@@ -103,6 +102,10 @@ input[type="radio"].visually-hidden {
 
   background: #ffc600;
   transition: 0.3s ease;
+}
+
+.cross-line.button {
+  z-index: 0;
 }
 
 .cross-line.button::before {
@@ -721,7 +724,6 @@ position: relative;
 
 .innerpage-filter-background {
   background-image: linear-gradient(to right, #efefef 31.35%, #ffffff 31.35%);
-  box-shadow: inset 20px 0 0 0 linear
 }
 
 .innerpage-headerfilter-background {
@@ -880,6 +882,10 @@ position: relative;
   top: 17px;
 }
 
+.service-slider-button.cross-line:hover::before {
+  top: 0;
+  height: 100%;
+}
 
 .service-slider-button {
   margin-bottom: 24px;
@@ -1272,7 +1278,6 @@ position: relative;
 
 .range-filter {
   width: 200px;
-  /* margin-top: 49px; */
 }
 
 .range-controls {
