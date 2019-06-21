@@ -783,23 +783,41 @@ position: relative;
   margin: 0;
 }
 
-.popular-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.popular-wrapper {
+  display: block;
+  background-color: #f7e296;
+}
+
+.popular-img, .popular-wrapper {
   width: 160px;
   height: 160px;
   padding: 0;
   margin: 0;
   margin-bottom: 33px;
+}
 
-  background-color: #f7e296;
+ .popular-category-virtual {
+  background-image: url(../img/popular-1.png);
+}
+
+.popular-category-monopods {
+  background-image: url(../img/popular-2.png);
+}
+
+.popular-category-action {
+  background-image: url(../img/popular-3.png);
+}
+
+.popular-category-wristbands {
+  background-image: url(../img/popular-4.png);
+}
+
+.popular-category-smartwatch {
+  background-image: url(../img/popular-5.png);
+}
+
+.popular-category-quadcopters {
+  background-image: url(../img/popular-6.png);
 }
 
 .popular-category:nth-child(2) p {
@@ -817,10 +835,8 @@ position: relative;
   background-color: #f0c52e;
 }
 
-.popular-category:active figcaption,
-.popular-category:active img,
-.popular-img img:active, /* для IE*/
-.popular-category figcaption a:active { /* для IE*/
+.popular-img:active,
+.popular-label a:active {
   opacity: 0.3;
 }
 
@@ -1074,6 +1090,23 @@ position: relative;
   margin-top: -12px;
   padding-right: 46px;
   margin-bottom: auto;
+  width: 180px;
+  height: 194px;
+}
+
+.service-image-delivery {
+  background-image: url(../img/delivery.png);
+  background-repeat: no-repeat;
+}
+
+.service-image-warranty {
+  background-image: url(../img/warranty.png);
+  background-repeat: no-repeat;
+}
+
+.service-image-credit {
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
 }
 
 .warranty, .credit {
@@ -1149,14 +1182,14 @@ position: relative;
 }
 
 .about-us {
-  padding-right: 128px;
+  padding-right: 125px;
 }
 
 .about-us p {
   padding: 0;
   margin: 0;
   padding-bottom: 30px;
-  width: 470px;
+  width: 472px;
 
   font-family: OpenSans, Arial, sans-serif;
   font-size: 15px;
@@ -1166,21 +1199,13 @@ position: relative;
   text-indent: 1px;
 }
 
-.about-firstparagraph {
-  letter-spacing: 0.01em;
-}
-
-.about-secondparagraph {
-  letter-spacing: -0.01em;
-}
-
 .delivery-partners {
   margin: 0;
   padding: 35px 0 0 0;
   margin-bottom: 50px;
 
   line-height: 40px;
-  letter-spacing: -1px;
+  font-size: 16px;
 
   list-style-type: none;
 }
@@ -1781,7 +1806,6 @@ position: relative;
 }
 
 .footer-menu-wrapper {
-  width: 325px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1909,7 +1933,6 @@ position: relative;
   font-family: OpenSans, Arial, sans-serif;
   font-size: 15px;
   font-weight: 300;
-  letter-spacing: -0.1px;
   line-height: 36px;
 
   opacity: 0.7;
@@ -2066,10 +2089,9 @@ position: relative;
   left: 50%;
   z-index: 100;
 
-  padding: 98px 100px 80px 100px;
+  padding: 95px 100px 80px 99px;
   margin-top: -290px;
   margin-left: -480px;
-
 
   background-color: white;
 }
@@ -2079,19 +2101,20 @@ position: relative;
   vertical-align: middle;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .modal-write-us span {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
+  padding-left: 1px;
 }
 
 .modal-write-us input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 360px;
-  padding: 20px;
+  padding: 13px 0px 17px 19px;
 
   background-color: #f2f2f2;
   border: 0;
@@ -2106,8 +2129,8 @@ position: relative;
           box-sizing: border-box;
   display: block;
   width: 760px;
-  padding: 20px;
-  padding-bottom: 35px;
+  padding: 14px 0 40px 17px;
+  margin-bottom: 5px;
 
   background-color: #f2f2f2;
   border: 0;
