@@ -779,65 +779,70 @@ position: relative;
 }
 
 .popular-category {
-  padding: 0;
-  margin: 0;
+  position: relative;
+
+  width: 160px;
+  padding-top: 193px;
+
+  letter-spacing: 0.01em;
 }
 
-.popular-wrapper {
-  display: block;
+.popular-category::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 160px;
+  height: 160px;
+
   background-color: #f7e296;
 }
 
-.popular-img, .popular-wrapper {
+.popular-category::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
   width: 160px;
   height: 160px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 33px;
 }
 
- .popular-category-virtual {
-  background-image: url(../img/popular-1.png);
+.popular-category-virtual.popular-category::after {
+  background: url(../img/popular-1.svg) no-repeat 49% 49%;
 }
 
-.popular-category-monopods {
-  background-image: url(../img/popular-2.png);
+.popular-category-monopods.popular-category::after {
+  background: url(../img/popular-2.svg) no-repeat 52% 95%;
 }
 
-.popular-category-action {
-  background-image: url(../img/popular-3.png);
+.popular-category-action.popular-category::after {
+  background: url(../img/popular-3.svg) no-repeat 55% 52%;
 }
 
-.popular-category-wristbands {
-  background-image: url(../img/popular-4.png);
+.popular-category-wristbands.popular-category::after {
+  background: url(../img/popular-4.svg) no-repeat 52% 53%;
 }
 
-.popular-category-smartwatch {
-  background-image: url(../img/popular-5.png);
+.popular-category-smartwatch.popular-category::after {
+  background: url(../img/popular-5.svg) no-repeat 53% 51%;
 }
 
-.popular-category-quadcopters {
-  background-image: url(../img/popular-6.png);
+.popular-category-quadcopters.popular-category::after {
+  background: url(../img/popular-6.svg) no-repeat 47% 54%;
 }
 
-.popular-category:nth-child(2) p {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.popular-category figcaption {
-  width: 160px;
-  letter-spacing: 0.3px;
-}
-
-.popular-category:hover .popular-img {
+.popular-category:hover::before {
   background-color: #f0c52e;
 }
 
-.popular-img:active,
-.popular-label a:active {
+.popular-category:active::after {
   opacity: 0.3;
+}
+
+.popular-category:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .innerpage-filter-background {
@@ -1015,8 +1020,10 @@ position: relative;
 }
 
 .service-slider-button.cross-line {
+  padding: 8px 0px 8px 5px;
+  /* padding-left: 2px;
   padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 8px; */
 }
 
 .service-slider-button.cross-line::before {
@@ -1030,8 +1037,8 @@ position: relative;
 
 .service-slider-button {
   margin-bottom: 24px;
-  margin-right: 124px;
-  width: 160px;
+  /* margin-right: 124px; */
+  width: 158px;
 
   text-align: center;
 }
@@ -1045,7 +1052,7 @@ position: relative;
 .warranty-slider:checked ~ .serviceslider-controls label[for="warranty-slider"],
 .credit-slider:checked ~ .serviceslider-controls label[for="credit-slider"] {
   margin-right: 0;
-  padding-right: 124px;
+  padding-right: 121px;
 
   color: #f7e184;
   background-color: #000000;
@@ -1072,6 +1079,13 @@ position: relative;
 }
 
 .service-description {
+  position: relative;
+
+  width: 444px;
+  padding-right: 316px;
+}
+
+.service-description-text {
   margin: 0;
 
   font-family: OpenSans, Arial, sans-serif;
@@ -1081,35 +1095,30 @@ position: relative;
   letter-spacing: 0.28px;
 }
 
-.service-description-text {
-  width: 444px;
-  padding-right: 90px;
-}
+.service-description::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: 46px;
 
-.service-image {
-  margin-top: -12px;
-  padding-right: 46px;
-  margin-bottom: auto;
   width: 180px;
   height: 194px;
 }
 
-.service-image-delivery {
-  background-image: url(../img/delivery.png);
-  background-repeat: no-repeat;
+.delivery .service-description::after {
+  background: url(../img/delivery.svg) no-repeat 55% 79%;
 }
 
-.service-image-warranty {
-  background-image: url(../img/warranty.png);
-  background-repeat: no-repeat;
+.warranty .service-description::after {
+  background: url(../img/warranty.svg) no-repeat 100% 100%;
 }
 
-.service-image-credit {
-  background-image: url(../img/credit.png);
-  background-repeat: no-repeat;
+.credit .service-description::after {
+  background: url(../img/credit.svg) no-repeat 0% 0%;
 }
 
-.warranty, .credit {
+.warranty,
+.credit {
   display: none;
 }
 
@@ -1119,34 +1128,35 @@ position: relative;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 93px;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-bottom: 192px;
+  margin-left: -19px;
+  margin-right: -18px;
 }
 
 .brand-logo {
+  position: relative;
   width: 260px;
-  height: 100px;
 }
 
-.brand-logo-dji {
-  background-image: url(../img/brandlogo1.png)
+.brand-gray-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  z-index: 1;
 }
 
-.brand-logo-sp {
-  background-image: url(../img/brandlogo2.png)
+.brand-colorful-logo {
+  display: none;
+  position: absolute;
 }
 
-.brand-logo-gopro {
-  background-image: url(../img/brandlogo3.png)
+.brand-gray-logo:hover{
+  opacity: 0;
 }
 
-.brand-logo-vive {
-  background-image: url(../img/brandlogo4.png)
-}
-
-.brand-logo:hover {
-  background-position-y: 100px;
+.brand-logo:hover .brand-colorful-logo {
+  display: block;
 }
 
 .info-blocks-wrapper {
