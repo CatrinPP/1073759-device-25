@@ -1021,9 +1021,6 @@ position: relative;
 
 .service-slider-button.cross-line {
   padding: 8px 0px 8px 5px;
-  /* padding-left: 2px;
-  padding-top: 8px;
-  padding-bottom: 8px; */
 }
 
 .service-slider-button.cross-line::before {
@@ -1037,7 +1034,6 @@ position: relative;
 
 .service-slider-button {
   margin-bottom: 24px;
-  /* margin-right: 124px; */
   width: 158px;
 
   text-align: center;
