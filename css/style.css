@@ -1114,7 +1114,8 @@ position: relative;
 }
 
 .warranty,
-.credit {
+.credit,
+.delivery {
   display: none;
 }
 
@@ -2296,4 +2297,8 @@ position: relative;
           animation-duration: 0.6s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+}
+
+.slider-show {
+  display: block;
 }
