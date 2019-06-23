@@ -76,9 +76,9 @@ warrantySliderLink.addEventListener("click", function(evt){
   deliverySlider.classList.remove("slider-show");
   creditSlider.classList.remove("slider-show");
   warrantySlider.classList.add("slider-show");
-  // deliverySliderLink.removeAttribute("checked");
-  // creditSliderLink.removeAttribute("checked");
-  // warrantySliderLink.setAttribute("checked", "checked");
+  deliverySliderLink.classList.remove("slider-button-active");
+  creditSliderLink.classList.remove("slider-button-active");
+  warrantySliderLink.classList.add("slider-button-active");
 });
 
 creditSliderLink.addEventListener("click", function(evt){
@@ -86,9 +86,9 @@ creditSliderLink.addEventListener("click", function(evt){
   deliverySlider.classList.remove("slider-show");
   warrantySlider.classList.remove("slider-show");
   creditSlider.classList.add("slider-show");
-  // deliverySliderLink.removeAttribute("checked");
-  // warrantySliderLink.removeAttribute("checked");
-  // creditSliderLink.setAttribute("checked", "checked");
+  warrantySliderLink.classList.remove("slider-button-active");
+  deliverySliderLink.classList.remove("slider-button-active");
+  creditSliderLink.classList.add("slider-button-active");
 });
 
 deliverySliderLink.addEventListener("click", function(evt){
@@ -96,7 +96,7 @@ deliverySliderLink.addEventListener("click", function(evt){
   warrantySlider.classList.remove("slider-show");
   creditSlider.classList.remove("slider-show");
   deliverySlider.classList.add("slider-show");
-  // creditSliderLink.removeAttribute("checked");
-  // warrantySliderLink.removeAttribute("checked");
-  // deliverySliderLink.setAttribute("checked", "checked");
+  warrantySliderLink.classList.remove("slider-button-active");
+  creditSliderLink.classList.remove("slider-button-active");
+  deliverySliderLink.classList.add("slider-button-active");
 });

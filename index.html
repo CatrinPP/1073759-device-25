@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -132,15 +132,10 @@
       <div class="services-slider-background">
         <div class="wrapper">
           <section class="services-slider">
-            <div class="services-list-buttons">
-              <input class="delivery-slider visually-hidden" id="delivery-slider" type="radio" name="services-slider" value="service-slider1" checked>
-              <input class="warranty-slider visually-hidden" id="warranty-slider" type="radio" name="services-slider" value="service-slider2">
-              <input class="credit-slider visually-hidden" id="credit-slider" type="radio" name="services-slider" value="service-slider3">
-              <div class="serviceslider-controls">
-                <label class="cross-line service-slider-button" for="delivery-slider">Доставка</label>
-                <label class="cross-line service-slider-button" for="warranty-slider">Гарантия</label>
-                <label class="cross-line service-slider-button" for="credit-slider">Кредит</label>
-              </div>
+            <div class="service-slider-controls">
+              <button class="delivery-slider cross-line service-slider-button slider-button-active">Доставка</button>
+              <button class="warranty-slider cross-line service-slider-button">Гарантия</button>
+              <button class="credit-slider cross-line service-slider-button">Кредит</button>
             </div>
             <div class="services-description-block">
               <h2 class="visually-hidden">Дополнительные услуги магазина</h2>
@@ -285,6 +280,6 @@
         <img src="img/map-big.png" alt="Адрес компании ул.Строителей, д.15" width="960" height="559">
       <button class="modal-close" aria-label="Закрыть окно"></button>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

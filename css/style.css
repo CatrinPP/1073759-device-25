@@ -992,7 +992,7 @@ position: relative;
   padding-bottom: 116px;
 }
 
-.services-list-buttons {
+.service-slider-controls {
   position: relative;
   z-index: 10;
 
@@ -1008,7 +1008,7 @@ position: relative;
   padding-top: 7px;
 }
 
-.services-list-buttons::after {
+.service-slider-controls::after {
   content: "";
   position: absolute;
   top: -73px;
@@ -1016,42 +1016,35 @@ position: relative;
 
   width: 7px;
   height: 319px;
+
   background-color: #000000;
 }
 
-.service-slider-button.cross-line {
-  padding: 8px 0px 8px 5px;
+.service-slider-button {
+  margin: 0 116px 24px 0px;
+  padding: 10px 22px 10px 22px;
+
+  border: 0;
+  background: none;
+}
+
+.service-slider-button.slider-button-active {
+margin-right: 6px;
+padding-right: 132px;
+
+color: #f7e184;
+
+background-color: #000000;
 }
 
 .service-slider-button.cross-line::before {
   top: 17px;
+  width: 160px;
 }
 
 .service-slider-button.cross-line:hover::before {
   top: 0;
   height: 100%;
-}
-
-.service-slider-button {
-  margin-bottom: 24px;
-  width: 158px;
-
-  text-align: center;
-}
-
-.serviceslider-controls label {
-  display: block;
-}
-
-.service-slider-button:active,
-.delivery-slider:checked ~ .serviceslider-controls label[for="delivery-slider"],
-.warranty-slider:checked ~ .serviceslider-controls label[for="warranty-slider"],
-.credit-slider:checked ~ .serviceslider-controls label[for="credit-slider"] {
-  margin-right: 0;
-  padding-right: 121px;
-
-  color: #f7e184;
-  background-color: #000000;
 }
 
 .services-description-block {
