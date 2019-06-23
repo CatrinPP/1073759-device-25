@@ -9,6 +9,15 @@ var mapLink = document.querySelector(".map");
 var mapPopup = document.querySelector(".modal-map");
 var mapClose = mapPopup.querySelector(".modal-close");
 
+
+var deliverySlider = document.querySelector(".delivery");
+var deliverySliderLink = document.querySelector(".delivery-slider");
+var warrantySlider = document.querySelector(".warranty");
+var warrantySliderLink = document.querySelector(".warranty-slider");
+var creditSlider = document.querySelector(".credit");
+var creditSliderLink = document.querySelector(".credit-slider");
+
+
 // Модальное окно
 link.addEventListener("click", function(evt){
   evt.preventDefault();
@@ -62,13 +71,6 @@ window.addEventListener("keydown", function(evt){
 });
 
 //Слайдер сервисов
-var deliverySlider = document.querySelector(".delivery");
-var deliverySliderLink = document.querySelector(".delivery-slider");
-var warrantySlider = document.querySelector(".warranty");
-var warrantySliderLink = document.querySelector(".warranty-slider");
-var creditSlider = document.querySelector(".credit");
-var creditSliderLink = document.querySelector(".credit-slider");
-
 warrantySliderLink.addEventListener("click", function(evt){
   evt.preventDefault();
   deliverySlider.classList.remove("slider-show");
